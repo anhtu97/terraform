@@ -1,0 +1,13 @@
+name_vm               = "test01"
+name_machine_type     = "e2-small"
+name_zone             = "us-west1-a"
+tags                  = ["foo", "http-server"]
+name_image_os         = "ubuntu-os-cloud/ubuntu-2004-lts"
+size_image            = 20
+name_network          = "default"
+name_compute_firewall = "default-allow-http-terraform"
+name_network_firewall = "default"
+name_protocol         = "tcp"
+ports                 = ["80", "443"]
+source_ranges         = ["0.0.0.0/0"]
+target_tags           = ["foo", "http-server"]
